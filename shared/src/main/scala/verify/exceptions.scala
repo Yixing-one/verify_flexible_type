@@ -14,7 +14,7 @@ package verify
 
 import verify.sourcecode.SourceLocation
 
-abstract class VerifyException(message: String, cause: Throwable) extends RuntimeException(message, cause)
+abstract class VerifyException(message: String|Null, cause: Throwable|Null) extends RuntimeException(message, cause)
 
 final class UnexpectedException(val reason: Throwable, val location: SourceLocation)
     extends VerifyException(null, reason)

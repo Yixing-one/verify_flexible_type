@@ -88,7 +88,7 @@ abc abcdef  false
   }
 
   test("null value") {
-    val x = null
+    val x:String|Null = null
 
     outputs("""assertion failed
 

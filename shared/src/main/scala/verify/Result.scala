@@ -88,7 +88,7 @@ object Result {
 
   private def formatError(
       name: String,
-      msg: String,
+      msg: String|Null,
       source: Option[Throwable],
       location: Option[SourceLocation],
       traceLimit: Option[Int],

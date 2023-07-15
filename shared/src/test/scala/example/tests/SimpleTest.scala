@@ -50,7 +50,7 @@ object SimpleTest extends BasicTestSuite {
   // }
 
   test("assert equals with nulls") {
-    val s: String = null
+    val s: String|Null = null
 
     intercept[AssertionError] {
       assert(s == "dummy")
